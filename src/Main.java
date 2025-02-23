@@ -34,7 +34,7 @@ public class Main {
                         System.out.println("Apakah anda ingin menyimpan solusi? (ya/tidak)");
                         save = save_scanner.nextLine();
                         if (save.equals("ya")) {
-                            outputFile(result.board, "test/solusi.txt");
+                            outputFile(result.board, "../test/solusi.txt");
                             break;
                         } else if (save.equals("tidak")) {
                             break;
