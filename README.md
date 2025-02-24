@@ -16,7 +16,7 @@ Program ini memiliki beberapa fitur utama:
       ```
    3. Kompilasi Program
       ```bash
-      javac -d ../bin Main.java function/*.java
+      javac -d bin -cp src src/*.java src/function/*.java
       ```
    4. Jalankan Program
       ```bash
