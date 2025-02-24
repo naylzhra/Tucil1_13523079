@@ -11,11 +11,14 @@ Program ini memiliki beberapa fitur utama:
 
 ## Cara Menjalankan Program
    1. Clone repository
-   2. Kompilasi Program
+      ```bash
+      git clone https://github.com/naylzhra/Tucil1_13523079.git
+      ```
+   3. Kompilasi Program
       ```bash
       javac -d ../bin Main.java function/*.java
       ```
-   3. Jalankan Program
+   4. Jalankan Program
       ```bash
       java Main
       ```
