@@ -30,11 +30,16 @@ public class Main {
                     System.out.println("Banyak kasus yang ditinjau: " + result.count);
                     Scanner save_scanner = new Scanner(System.in);
                     String save;
+                    String namaFile;
                     while (true) {
                         System.out.println("Apakah anda ingin menyimpan solusi? (ya/tidak)");
                         save = save_scanner.nextLine();
                         if (save.equals("ya")) {
-                            outputFile(result.board, "../test/solusi.txt");
+                            System.out.println("Masukkan nama file output (tidak perlu diakhiri .txt): ");
+                            Scanner scan = new Scanner(System.in);
+                            namaFile = scan.nextLine();
+                            scan.close();
+                            outputFile(result.board, "../test/" + namaFile + ".txt");
                             break;
                         } else if (save.equals("tidak")) {
                             break;
