@@ -22,9 +22,9 @@ Program ini memiliki beberapa fitur utama:
 
 ## Format File Input
 File input harus mengikuti format berikut:
-Baris pertama: N M P (dimensi papan dan jumlah potongan)
-Baris kedua: "DEFAULT" (tipe papan)
-Baris selanjutnya: Konfigurasi potongan menggunakan huruf (A-Z) dan spasi
+- Baris pertama: N M P (dimensi papan dan jumlah potongan)
+- Baris kedua: "DEFAULT" (tipe papan)
+- Baris selanjutnya: Konfigurasi potongan menggunakan huruf (A-Z) dan spasi
 
 ## Identitas Pembuat
 Nayla Zahira (13523079)
