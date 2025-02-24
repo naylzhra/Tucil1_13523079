@@ -20,6 +20,7 @@ Program ini memiliki beberapa fitur utama:
       ```
    4. Jalankan Program
       ```bash
+      cd bin
       java Main
       ```
 
