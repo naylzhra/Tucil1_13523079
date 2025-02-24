@@ -56,7 +56,7 @@ public class Solver {
         
         if (index >= pieces.size()) {
             if (isBoardFull(board)){
-                System.out.println("\n==================================================\n");
+                System.out.println("==================================================\n");
                 displayBoard(board);
                 return new Result(board, count);
             } else{

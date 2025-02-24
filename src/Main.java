@@ -7,14 +7,15 @@ import function.*;
 
 public class Main {
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
-
+        
+        System.out.println("\n=================================================");
         System.out.println("Masukkan nama file input: ");
         Scanner scanner = new Scanner(System.in);
         String fileName;
         boolean fileExists = false;
-
+        
         while (!fileExists) {
+            long startTime = System.currentTimeMillis();
             fileName = scanner.nextLine();
             try {
                 Board board = Input.readInput("../test/" + fileName);
@@ -24,10 +25,13 @@ public class Main {
                 
                 Solver.Result result = Solver.solve(board.board, board.pieces, 0);
                 long endTime = System.currentTimeMillis();
+                if(result.board == null) {
+                    System.out.println("=================================================");
+                }
                 System.out.println("\nWaktu pencarian: " + (endTime - startTime) + " ms");
+                System.out.println("Banyak kasus yang ditinjau: " + result.count);
                 
-                if (result != null) {
-                    System.out.println("Banyak kasus yang ditinjau: " + result.count);
+                if (result.board != null) {
                     Scanner save_scanner = new Scanner(System.in);
                     String save;
                     String namaFile;
@@ -50,6 +54,7 @@ public class Main {
                     save_scanner.close();
                 } else {
                     System.out.println("No solution found.");
+                    System.out.println("=================================================");
                 }
                 fileExists = true;
             }  
@@ -67,6 +72,8 @@ public class Main {
                 writer.write(line);
                 writer.newLine();
             }
+            System.out.println("Output berhasil disimpan!");
+            System.out.println("=================================================");
         } catch (IOException e){
             System.out.println("error writing to file!");
         }
