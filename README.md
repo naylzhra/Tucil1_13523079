@@ -9,23 +9,24 @@ Program ini memiliki beberapa fitur utama:
 - Menyimpan solusi ke dalam file .txt
 - Menampilkan waktu eksekusi dan jumlah kasus yang ditinjau
 
-# Cara Kompilasi Program
-Untuk mengkompilasi program, buka terminal dan masuk ke direktori src, lalu jalankan:
-javac -d ../bin Main.java function/*.java
+## Cara Menjalankan Program
+   1. Clone repository
+   2. Kompilasi Program
+      ```bash
+      javac -d ../bin Main.java function/*.java
+      ```
+   3. Jalankan Program
+      ```bash
+      java Main
+      ```
 
-# Cara Menjalankan Program
-Buka terminal dan masuk ke direktori bin
-Jalankan program dengan perintah:
-java Main
-
-# Format Berkas Masukan
-Berkas masukan harus mengikuti format berikut:
-
+## Format File Input
+File input harus mengikuti format berikut:
 Baris pertama: N M P (dimensi papan dan jumlah potongan)
 Baris kedua: "DEFAULT" (tipe papan)
 Baris selanjutnya: Konfigurasi potongan menggunakan huruf (A-Z) dan spasi
 
-# Identitas Pembuat
+## Identitas Pembuat
 Nayla Zahira (13523079)
 Teknik Informatika
 Institut Teknologi Bandung
